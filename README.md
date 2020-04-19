@@ -1,6 +1,7 @@
 # Recommendation-System-Project
-Gabrielle Taylor, Mousumi Akter, and Sicheng Li
+by Gabrielle Taylor, Mousumi Akter, and Sicheng Li
 
+This project is part of our COMP6970: Information Retrieval Course
 Overview
 --------
 We built a transparent and explainable recommendation system framework based on the [paper](https://dl.acm.org/doi/10.1145/3331184.3331211).
