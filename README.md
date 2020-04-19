@@ -9,6 +9,8 @@ Overview
 --------
 We built a transparent and explainable recommendation system framework based on the [paper](https://dl.acm.org/doi/10.1145/3331184.3331211).
 
+[Movie Dataset](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/moviedataset.zip)
+
 Presentation of the project can be found in the following link:
 
  * [Proposal](https://docs.google.com/document/d/1kxYQWJXP3oqOdWgWYEUQ6pFCF2LscH5Zo8FL2thaz5c/edit?usp=sharing) 
