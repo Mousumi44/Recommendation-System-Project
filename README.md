@@ -1,6 +1,8 @@
 # Recommendation-System-Project
 by Gabrielle Taylor, Mousumi Akter, and Sicheng Li
 
+
+
 This project is part of our COMP6970: Information Retrieval Course.
 
 Overview
