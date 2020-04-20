@@ -13,10 +13,11 @@ We built a transparent and explainable recommendation system framework based on 
 
 How To Run
 ----------
+'''
 git clone https://github.com/Mousumi44/Recommendation-System-Project.git
 cd Recommendation-System-Project
 python full_recommender.py
-
+'''
 Sample Input:
 ![Image description](https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png)
 
