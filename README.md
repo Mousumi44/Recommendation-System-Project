@@ -21,7 +21,7 @@ python full_recommender.py
 
 Sample Input & Output:
 ----------------------
-<img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png" width="200" height="150" />
+<img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png" width="400" height="250" />
 
 <img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/output.png" width="800" height="20" />
 
