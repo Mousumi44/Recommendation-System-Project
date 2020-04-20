@@ -29,7 +29,7 @@ def get_interests():
 
     print("Please enter movies and rating")
     for i in range(5):
-        movie = input("Enter movie interest"+i+": ")
+        movie = input("Enter movie interest"+str(i)+": ")
         rating = input("Rate 1 to 5: ")
         movie_interests.append(movie)
         ratings.append(rating)
