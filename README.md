@@ -19,11 +19,11 @@ cd Recommendation-System-Project
 python full_recommender.py
 ```
 
-Sample Input:
-<img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png" width="25" height="25" />
+Sample Input & Output:
+----------------------
+<img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png" width="200" height="50" />
 
-Sample Output:
-<img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/output.png" width="25" height="25" />
+<img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/output.png" width="200" height="50" />
 
 Presentation of the project can be found in the following link:
 
