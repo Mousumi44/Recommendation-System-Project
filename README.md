@@ -20,9 +20,9 @@ python full_recommender.py
 ```
 
 Sample Input:
-![Image description1](https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png)
+![Image description1](https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png =25x25)
 Sample Output:
-![Image description2](https://github.com/Mousumi44/Recommendation-System-Project/blob/master/output.png)
+![Image description2](https://github.com/Mousumi44/Recommendation-System-Project/blob/master/output.png =25x25)
 
 Presentation of the project can be found in the following link:
 
