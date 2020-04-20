@@ -23,7 +23,7 @@ Sample Input & Output:
 ----------------------
 <img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png" width="200" height="150" />
 
-<img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/output.png" width="200" height="10" />
+<img src="https://github.com/Mousumi44/Recommendation-System-Project/blob/master/output.png" width="800" height="20" />
 
 Presentation of the project can be found in the following link:
 
