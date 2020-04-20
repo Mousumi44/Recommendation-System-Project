@@ -11,6 +11,15 @@ We built a transparent and explainable recommendation system framework based on 
 
 [Movie Dataset](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/moviedataset.zip)
 
+How To Run
+----------
+git clone https://github.com/Mousumi44/Recommendation-System-Project.git
+cd Recommendation-System-Project
+python full_recommender.py
+
+Sample Input:
+![Image description](https://github.com/Mousumi44/Recommendation-System-Project/blob/master/input.png)
+
 Presentation of the project can be found in the following link:
 
  * [Proposal](https://docs.google.com/document/d/1kxYQWJXP3oqOdWgWYEUQ6pFCF2LscH5Zo8FL2thaz5c/edit?usp=sharing) 
