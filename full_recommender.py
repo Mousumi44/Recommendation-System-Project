@@ -157,7 +157,6 @@ class FullRecommender():
 
         recommendationTable_df = ((genreTable*userProfile).sum(axis=1))/(userProfile.sum())
         recommendationTable_df = recommendationTable_df.sort_values(ascending=False)
-
         rec = self.movies_df.loc[self.movies_df['movieId'].isin(recommendationTable_df.head(1).keys())]
         recommendation = rec.loc[rec.index[0]]['title']
         full_statement = "we recommend \'"+ recommendation + "\' because " + self.statement
