@@ -92,17 +92,20 @@ class ExplainableRecommender(object):
         print('Finding highest rated tag...')
         # Dot produt to get weights
         userProfile = userGenreTable.transpose().dot(inputMovies['rating'])
+
+
         # The user profile
         highest_rated_tag = userProfile.sort_values(ascending=False)
-        highest_rated_tag=pd.DataFrame(highest_rated_tag, columns=['Tag']) 
-
-        print("highest Rated Tag")
-        print(highest_rated_tag.to_string())
+    
+        print("Weighted Genres List")
+        print("==========================================")
+        print(highest_rated_tag)
         print("------------------------------------------")
-        
 
-        
+        highest_rated_genres=list(highest_rated_tag.index)
 
+        self.reason = " because You like "+str(highest_rated_genres[0])+" most especially if "+ str(highest_rated_genres[1])
+        
         self.userProfile = userProfile
 
         print('Generating recommendation...')
@@ -124,7 +127,7 @@ class ExplainableRecommender(object):
         recommendationTable_df = recommendationTable_df.sort_values(
             ascending=False)
 
-        recommendation_no = 2
+        recommendation_no = 1
         # The final recommendation table
         final_recommendation = self.movies_df.loc[self.movies_df['movieId'].isin(
             recommendationTable_df.head(recommendation_no).keys())]
@@ -143,8 +146,13 @@ class ExplainableRecommender(object):
 
         for i in range(recommendation_no):
             recommendation = final_recommendation['title'].values[i]
-            full_statement = "we recommend " + recommendation
+            full_statement = "we recommend " + recommendation+self.reason
             print(full_statement)
+        print("---------------------------------------------------------------------------------------------")
+        print("-----------------------------------------END--------------------------------------------------")
+        print("----------------------------------------------------------------------------------------------")
+
+
 
     def build_userprofile(self, movie_interests, ratings):
         userInput = []
