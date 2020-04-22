@@ -57,8 +57,8 @@ class FullRecommender():
         avg_rating = {}
         tag_ratings = {}
         self.vector_dict = {}
-        print('Calculating Ratings...')
 
+        print('Calculating Ratings...')
         for i in range(genre_table_size):
             vector = str(list(just_genres.iloc[i])).strip('[]')
             rating = float(self.inputMovies['rating'][i])
@@ -144,10 +144,13 @@ class FullRecommender():
         user_df = pd.DataFrame(self.user_pref_vect, index=['Adventure',	'Animation',	'Children',	'Comedy',	'Fantasy',	'Romance',	'Drama',	'Action',	'Crime',	'Thriller',	'Horror',	'Mystery',	'Sci-Fi',	'IMAX',	'Documentary',	'War',	'Musical',	'Western',	'Film-Noir',	'(no genres listed)'])
         user_df_T = user_df.T
 
+        h = self.vector_dict[self.highest_rated_tag]
         self.vector_dict.pop(self.highest_rated_tag)
         droppings = self.vector_dict.values()
         input_movies = self.inputMovies['rating'].drop(droppings)
-        input_movies.iloc[self.hr_idx] = float(input_movies.iloc[self.hr_idx])
+
+        h = int(h)
+        input_movies.iloc[h] = float(input_movies.iloc[h])
         userProfile = user_df_T.transpose().dot(input_movies)
 
         #Now let's get the genres of every movie in our original dataframe
@@ -158,11 +161,10 @@ class FullRecommender():
         recommendationTable_df = ((genreTable*userProfile).sum(axis=1))/(userProfile.sum())
         recommendationTable_df = recommendationTable_df.sort_values(ascending=False)
 
-        rec = self.movies_df.loc[self.movies_df['movieId'].isin(recommendationTable_df.head(1).keys())]
-        recommendation = rec.loc[rec.index[0]]['title']
-        full_statement = "we recommend \'"+ recommendation + "\' because " + self.statement
-
-        print(full_statement)
+        recs = self.movies_df.loc[self.movies_df['movieId'].isin(recommendationTable_df.head(10).keys())]
+        recommendation = recs.loc[recs.index[0]]['title']
+        print('Recommendations: \n', recommendation)
+        print('Explanation:', self.statement)
 
     #
     def createGenreTable(self, temp_inputMovies):
