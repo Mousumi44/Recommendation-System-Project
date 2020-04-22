@@ -104,7 +104,7 @@ class ExplainableRecommender(object):
 
         highest_rated_genres=list(highest_rated_tag.index)
 
-        self.reason = " because You like "+str(highest_rated_genres[0])+" most especially if "+ str(highest_rated_genres[1])
+        self.reason = " because You like "+str(highest_rated_genres[0])+" most also "+ str(highest_rated_genres[1])+" and "+str(highest_rated_genres[2])
         
         self.userProfile = userProfile
 
@@ -166,6 +166,13 @@ class ExplainableRecommender(object):
     def get_interests(self):
         movie_interests = []
         ratings = []
+
+        print("----------------------------------------------------------------------------------------------------")
+        print("-------------------------PLEASE ENTER MOVIES IN CAPITAL LETTERS-------------------------------------")
+        print("--------IF Starts with a \"The\", like \"The Matrix\", write like this \"Matrix\, The\"-------------")
+        print("-----------------------------------------------------------------------------------------------------")
+        print("------------------------------------------MENU------------------------------------------------------")
+        print("-----------------------------------------------------------------------------------------------------")
 
         n = input("Enter number of ratings you want to give: ")
         n = int(n)
