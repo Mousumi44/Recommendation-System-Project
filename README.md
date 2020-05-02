@@ -5,7 +5,7 @@ This project was part of our COMP6970: Information Retrieval Course.
 
 Overview
 --------
-The main goal of this project was to build a transparent and explainable recommendation system framework. We implemented set-based explainable recommendation system framework based on the [paper](https://dl.acm.org/doi/10.1145/3331184.3331211). Then, I (Mousumi) have also proposed a novel rank-based explainable technique for recommendation system. Through extensive experiments on popular [Movielens 20M Dataset](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/moviedataset.zip), I have found out that that our proposed rank-based explainable recommendation system is comparable with the current state of the art set-based explainable recommendation system.
+The main goal of this project was to build a transparent and explainable recommendation system framework. We implemented set-based explainable recommendation system framework based on the [paper](https://dl.acm.org/doi/10.1145/3331184.3331211). Then, I (Mousumi) have also proposed a novel rank-based explainable technique for recommendation system. Through extensive experiments on popular [Movielens 20M Dataset](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/moviedataset.zip), I have found out that our proposed rank-based explainable recommendation system is comparable with the current state of the art set-based explainable recommendation system.
 
 How To Run
 ----------
